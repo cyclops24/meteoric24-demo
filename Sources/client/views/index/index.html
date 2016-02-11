@@ -1,0 +1,16 @@
+<template name="index">
+    {{#contentFor "headerButtonLeft"}}
+        <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+            {{> ionIcon icon='navicon'}}
+        </button>
+    {{/contentFor}}
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Index</h1>
+    {{/contentFor}}
+
+    <ul>
+        {{# each messages }}
+            <li>{{title}}</li>
+        {{/each}}
+    </ul>
+</template>

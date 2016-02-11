@@ -1,0 +1,11 @@
+<template name="loading">
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Connecting to Server</h1>
+    {{/contentFor}}
+
+    <div style="text-align: center;">
+        Please Wait...
+        <br>
+        {{> ionSpinner icon="android"}}
+    </div>
+</template>

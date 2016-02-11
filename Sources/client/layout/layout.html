@@ -1,18 +1,22 @@
 <template name="layout">
     {{#ionBody}}
 
-        {{#ionSideMenuContainer side="right"}}
 
-            {{#ionSideMenus}}
-                {{> sideMenu }}
-            {{/ionSideMenus}}
+        {{#ionSideMenuContainer side="left"}}
+            {{> sideMenu }}
 
             {{#ionSideMenuContent}}
 
-                {{> ionNavBar class="bar-balanced"}}
-
                 {{#ionNavView}}
-                    {{> yield}}
+                    {{> ionNavBar class="bar-balanced"}}
+
+                    {{#ionView}}
+                        {{#ionContent}}
+                            <div class="padding">
+                                {{> yield}}
+                            </div>
+                        {{/ionContent}}
+                    {{/ionView}}
                 {{/ionNavView}}
 
             {{/ionSideMenuContent}}

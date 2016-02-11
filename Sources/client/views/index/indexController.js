@@ -1,6 +1,4 @@
 IndexController = RouteController.extend({
-    //layoutTemplate: 'PostLayout',
-
     template: 'index',
 
     waitOn: function () {

@@ -1,5 +1,7 @@
 Router.configure({
-    layoutTemplate: 'layout'
+    layoutTemplate: 'layout',
+    notFoundTemplate: "notFound",
+    loadingTemplate: "loading"
 });
 
 Meteor.startup(function () {
@@ -13,4 +15,5 @@ Meteor.startup(function () {
 
 Router.map(function() {
     this.route('index', {path: '/', controller: 'IndexController'});
+    this.route('blurredIssue', {path: '/blurredIssue', controller: 'BlurredIssueController'});
 });
